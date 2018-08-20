@@ -29,7 +29,7 @@ def startBluetoothController():
             result1 = sock.send(bytes(arduinoCommandBuilder(mode_cmd),'UTF-8'))
             print("Number of bytes sent: ",result1)
         elif mode_cmd == "terminal":
-            print("The current directory is ", os.getcwd())ar
+            print("The current directory is ", os.getcwd())
             print(subprocess.check_call((str(input("\nEnter your terminal command:\n>>"))),shell=True))
         elif mode_cmd == "arduino":
             print("Enter one of the following Arduino commands:\n")
