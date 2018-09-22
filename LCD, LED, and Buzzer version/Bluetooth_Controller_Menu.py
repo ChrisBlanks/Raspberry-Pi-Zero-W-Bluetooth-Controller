@@ -1,5 +1,10 @@
 #! /usr/bin/env python3
 
+# notes:
+#  -will require the user to download BlueZ for python
+#  -might require reconfiguration of bluetooth settings
+#  -must use the disconnect button before ending GUI application
+
 import bluetooth
 from bluetooth_controller import arduinoCommandBuilder
 try:
@@ -87,10 +92,6 @@ class MainMenu(tk.Frame):
         self.sock.close()
 
 if __name__ == "__main__":
-    
     root = tk.Tk()
     menu = MainMenu(master = root)
     menu.mainloop()
-
-
-        
