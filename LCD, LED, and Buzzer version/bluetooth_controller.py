@@ -1,4 +1,4 @@
-#! /urs/bin/env python
+#! /usr/bin/env python3
 
 import codecs
 import os
@@ -44,7 +44,6 @@ def startBluetoothController():
             print("You did not enter a valid option.\n")
 
     sock.close() #make sure to always exit out of loop to prevent weird bluetooth errors on PI
-
 
 if __name__ == "__main__":
     startBluetoothController()
